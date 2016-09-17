@@ -7,7 +7,7 @@
 1. 寫一個獨立的存檔app
 2. 將檔案轉存在手機內
 
-
+* * *
 ## 20160917.java
 app name : save_signal <br>
 專門存signal data的app，將signal data存在手表的/storage/emulated/0/DCIM/資料夾中 <br>
