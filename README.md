@@ -17,5 +17,7 @@ app name : save_signal <br>
 
 * * *
 ## 20160923
-adb command line
-move files from wear to computer
+adb command line <br>
+move files from wear to computer <br>
+#### 未來進度： <br>
+1. PCA (python)
