@@ -14,3 +14,8 @@ app name : save_signal <br>
 以Signal_ct.txt的格式為檔名 <br>
 #### 未來進度： <br>
 1. 將檔案轉存在手機內
+
+* * *
+## 20160923
+adb command line
+move files from wear to computer
