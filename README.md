@@ -1,5 +1,5 @@
 # wear_signal
-4th grade project : Signal detection for android wear
+4th grade project : Signal identification for android wear
 
 ## wear_signal.java
 app name : wear_signal <br>
