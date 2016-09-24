@@ -98,5 +98,5 @@ for i in range (1, 92):
     accuracy = accuracy + pca_correct(lowDDataMat1, lowDDataMat2, lowDDataMat3, lowDDataMat4, lowDDataMat5, lowDDataMat10)
     
     print "episode: ", i, "accuracy: ", accuracy
-accuracy = accuracy / (90*5) * 100
-print accuracy, "%"
+# accuracy = accuracy / (90*5) * 100
+# print accuracy, "%"
