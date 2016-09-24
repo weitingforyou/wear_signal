@@ -16,8 +16,12 @@ app name : save_signal <br>
 1. 將檔案轉存在手機內
 
 * * *
-## 20160923
+## 20160923.md
 adb command line <br>
 move files from wear to computer <br>
 #### 未來進度： <br>
 1. PCA (python)
+ 
+* * *
+## 20160924.md
+save signal 的步驟
