@@ -19,8 +19,9 @@ adb command line：http://adbshell.com/commands
 data：用smartwatch寫weiting for 100 times <br>
 pca_dtw.py：將data降維成一維，並做dtw <br>
 non-pca_dtw.py：data沒有做任何處理 <br>
-| correct function 係數 | data 處理 | 準確率 |
-| :-------------------- |:---------:| ------:|
+
+| correct function 係數  | data 處理  | 準確率 |
+| :------------ |:---------------:| -----:|
 | *1                    | 降成一維  | 72.22% |
 | *1.25                 | 降成一維  | 90.22% |
 | *1.5                  | 降成一維  | 96.89% |
