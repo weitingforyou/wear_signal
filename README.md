@@ -1,5 +1,5 @@
 # wear_signal
-4th grade project : Signal detection for android wear
+4th grade project : Signal detection for android wear <br>
 adb command line : http://adbshell.com/commands
 
 ## 20160916.java
