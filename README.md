@@ -1,5 +1,6 @@
 # wear_signal
 4th grade project : Signal detection for android wear
+adb command line : http://adbshell.com/commands
 
 ## 20160916.java
 完成將signal的三軸寫進txt檔，並存在手錶內<br>
