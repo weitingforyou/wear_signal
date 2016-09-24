@@ -61,7 +61,7 @@ public class MainActivity extends Activity {
                 String filename;
                 sm.unregisterListener(myAccelerometerListener);
                 try {
-                    filename = "/storage/emulated/0/DCIM/Signal_" + String.valueOf(file_ct) + ".txt";
+                    filename = "/storage/emulated/0/Signal/Signal_" + String.valueOf(file_ct) + ".txt";
                     FileWriter fw = new FileWriter(filename, false);
                     BufferedWriter bw = new BufferedWriter(fw); //將BufferedWeiter與FileWrite物件做連結
                     bw.write(output);
