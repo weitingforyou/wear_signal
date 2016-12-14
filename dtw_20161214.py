@@ -1,6 +1,7 @@
 import numpy as np
 from numpy import array, zeros, argmin, inf
 from matplotlib import pyplot as plt
+#from sklearn.metrics.pairwise import manhattan_distances
 from sklearn.metrics.pairwise import euclidean_distances
 
 def dtw(x, y, dist):
@@ -50,20 +51,32 @@ def _traceback(D):
         q.insert(0, j)
     return array(p), array(q)
 
-i = 1
-dataset = 'Signal_' + str(i) + '.txt'
-DataMat1 = np.loadtxt(dataset, delimiter=' ')
-dataset = 'Signal_' + str(i+1) + '.txt'
-DataMat2 = np.loadtxt(dataset, delimiter=' ')
+# load files
+all_dist = []
 
-dist_fun = euclidean_distances
+for i in xrange (1, 199):
+#for i in xrange (1, 4):
+    datadir = 'right/'
+    dataset = 'Signal_' + str(i) + '.txt'
+    DataMat1 = np.loadtxt(datadir+dataset, delimiter=' ')
+    dataset = 'Signal_' + str(i+1) + '.txt'
+    DataMat2 = np.loadtxt(datadir+dataset, delimiter=' ')
+    
+    dist_fun = euclidean_distances
+    
+    dist, cost, acc, path = dtw(DataMat1, DataMat2, dist_fun)
+   
+    all_dist.append(dist)
 
-dist, cost, acc, path = dtw(DataMat1, DataMat2, dist_fun)
 
+fo=open('weiting_right.txt','w')
+fo.write(str(all_dist))
+fo.close()
 
-print dist
-
-from matplotlib import pyplot as plt
+'''
 fig = plt.figure()
 ax = fig.add_subplot(1,1,1)
-ax.plot(path[0], path[1],'b')
+ax.plot(all_dist,'b')
+plt.ion()
+plt.show()
+'''
